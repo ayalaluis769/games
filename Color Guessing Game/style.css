@@ -1,0 +1,106 @@
+/* Foundation */
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+h3 {
+  line-height: 40px;
+}
+
+body {
+    background-image: url(/colors.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container{
+    height: 100px;
+    position: relative;
+}
+
+.container .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+/* Nav Bar */
+
+nav {
+  width: 100%;
+  margin: 0;
+}
+
+nav ul {
+  background-color: gray;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+ul.mainnav li {
+  list-style: none;
+}
+
+ul.mainnav li a {
+  display: block;
+  text-decoration: none;
+  min-height: 15px;
+  padding: 15px;
+  text-transform: uppercase;
+}
+
+ul.mainnav li a:hover {
+  background-color: goldenrod;
+  color: honeydew;
+}
+
+ul.mainnav li.dropdownIcon {
+  display: none;
+}
+
+
+/* Mobile */
+@media screen and (max-width: 680px) {
+  ul.mainnav li:not(:nth-child(1)) {
+    display: none;
+  }
+
+  ul.mainnav li.dropdownIcon {
+    display: block;
+    float: right;
+  }
+
+  ul.mainnav.responsive li.dropdownIcon {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  ul.mainnav.responsive {
+    position: relative;
+  }
+
+  ul.mainnav.responsive li {
+    display: inline;
+    float: none;
+  }
+
+  ul.mainnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+
+  .col-6,
+  .col-4,
+  .col-7,
+  .col-5 {
+    width: 100%;
+    margin: 0;
+  }
+
+}

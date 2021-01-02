@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Color Guessing Game</title>
+  </head>
+  <body>
+    <nav>
+      <ul class="mainnav" id="dropdownClick">
+        <li><a href="/Game Center/gamecenter.html">Home</a></li>
+        <li><a href="#">Colors</a></li>
+        <li><a href="/Number Guessing Game/numbers.html">Numbers</a></li>
+        <li><a href="/Icon Matching Game/icons.html">Icons</a></li>
+        <li class="dropdownIcon">
+          <a href="javascript:void(0)" onclick="dropdownMenu()">&#9776;</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="container">
+      <h1><i>Guess That Color!!!</i></h1>
+      <h2>Here are the rules:</h2>
+      <h3>
+        Simply pick a color from the list
+        <br />
+        Once you guess correctly, then press "Confirm" for your reward!
+        <br />
+        Don't worry if you get tired or want to give up, then just hit cancel!
+      </h3>
+      <div class="container">
+        <button class="btn" type="button" onclick="chooseColor()">
+          Choose The Color....!
+        </button>
+      </div>
+    </div>
+    <script src="colors.js"></script>
+  </body>
+</html>

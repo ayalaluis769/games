@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Game Center</title>
+  </head>
+  <body>
+    <nav>
+      <ul class="mainnav" id="dropdownClick">
+        <li><a href="#">Home</a></li>
+        <li><a href="/Color Guessing Game/colors.html">Colors</a></li>
+        <li><a href="/Number Guessing Game/numbers.html">Numbers</a></li>
+        <li><a href="/Icon Matching Game/icons.html">Icons</a></li>
+        <li class="dropdownIcon">
+          <a href="javascript:void(0)" onclick="dropdownMenu()">&#9776;</a>
+        </li>
+      </ul>
+    </nav>
+    <h1>Welcome to The Gaming Center!</h1>
+    <h2>Here you can enjoy some classic brain teasers at your leisure</h2>
+    <h3>Just click on either the icons below or the tabs above</h3>
+    <div class="container" id="section-1-gradient">
+      <div class="row">
+        <div class="col-4">
+          <div class="box">
+            <div class="icon">
+              <a href="/Color Guessing Game/colors.html"
+                ><img src="/Color Guessing Game/colors.png"
+              /></a>
+            </div>
+            <label>Color Guessing Game</label>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="box">
+            <div class="icon">
+              <a href="/Number Guessing Game/numbers.html"
+                ><img src="/Number Guessing Game/numbers.jpg"
+              /></a>
+            </div>
+            <label>Number Guessing Game</label>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="box">
+            <div class="icon">
+              <a href="/Icon Matching Game/icons.html"
+                ><img src="/Icon Matching Game/icons.png"
+              /></a>
+            </div>
+            <label>Icon Matching Game</label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="gamecenter.js"></script>
+  </body>
+</html>

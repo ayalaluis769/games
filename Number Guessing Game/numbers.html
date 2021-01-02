@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Number Guessing Game</title>
+  </head>
+  <body>
+    <nav>
+      <ul class="mainnav" id="dropdownClick">
+        <li><a href="/Game Center/gamecenter.html">Home</a></li>
+        <li><a href="#">Colors</a></li>
+        <li><a href="/Number Guessing Game/numbers.html">Numbers</a></li>
+        <li><a href="/Icon Matching Game/icons.html">Icons</a></li>
+        <li class="dropdownIcon">
+          <a href="javascript:void(0)" onclick="dropdownMenu()">&#9776;</a>
+        </li>
+      </ul>
+    </nav>
+    <h1><i>Number Guessing Game</i></h1>
+    <h2>Here are the rules:</h2>
+    <h3>
+      Guess the number
+      <br />
+      Keep guessing until you are correct
+      <br />
+      Don't worry if you get tired or want to give up, then just hit cancel!
+    </h3>
+    <div class="container">
+      <button class="btn" type="button" onclick="pickNumber()">
+        Choose The Number....!
+      </button>
+    </div>
+    <script src="numbers.js"></script>
+  </body>
+</html>

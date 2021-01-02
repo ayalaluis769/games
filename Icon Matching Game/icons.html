@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Icon Matching Game</title>
+  </head>
+  <body onload="generateFaces()">
+    <nav>
+      <ul class="mainnav" id="dropdownClick">
+        <li><a href="/Game Center/gamecenter.html">Home</a></li>
+        <li><a href="#">Colors</a></li>
+        <li><a href="/Number Guessing Game/numbers.html">Numbers</a></li>
+        <li><a href="/Icon Matching Game/icons.html">Icons</a></li>
+        <li class="dropdownIcon">
+          <a href="javascript:void(0)" onclick="dropdownMenu()">&#9776;</a>
+        </li>
+      </ul>
+    </nav>
+    <h1>Welcome to The Matching Game!!!</h1>
+    <h2>The rules are simple:</h2>
+    <h3>
+      There are four icons on the right
+      <br />
+      And five icons on the left
+      <br />
+      You have to compare both sides until you find the extra one
+      <br />
+      Once you find the extra icon, then you move on to the next level
+      <br />
+      If you choose an empty space or the wrong icon than the game ends and
+      you'll have to start over again!
+    </h3>
+    <div class="container">
+      <div class="col-4" id="leftSide"></div>
+      <div class="col-8" id="rightSide"></div>
+    </div>
+    <script src="icons.js"></script>
+  </body>
+</html>
